@@ -1,5 +1,3 @@
-https://nimoseel.github.io/React_Blog/
-
 # React Blog
 
 ## 현재 브랜치 셋팅 정보
