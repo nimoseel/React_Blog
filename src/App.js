@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import MainPage from "../src/pages/MainPage";
-import PostView from "../src/pages/PostView";
-import Header from "../src/components/Header/Header";
-import Footer from "../src/components/Footer/Footer";
+import MainPage from '../src/pages/MainPage';
+import PostView from '../src/pages/PostView';
+import Header from '../src/components/Header/Header';
+import Footer from '../src/components/Footer/Footer';
 
-import data from "./data.json"
+import data from './data.json';
 
-import './global.css'
+import './global.css';
 
 function App() {
 	return(

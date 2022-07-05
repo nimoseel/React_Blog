@@ -1,7 +1,7 @@
-import React from 'react'
-import './main.css'
-import Posts from '../Main/Posts'
-import About from '../Main/About'
+import React from 'react';
+import './main.css';
+import Posts from '../Main/Posts';
+import About from '../Main/About';
 
 
 function Main({data}) {

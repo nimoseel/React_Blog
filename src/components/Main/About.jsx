@@ -1,9 +1,9 @@
 import React from 'react';
-import './about.css'
-import Facebook from '../../assets/Facebook.svg'
-import Twitter from '../../assets/Twitter.svg'
-import Instagram from '../../assets/Instagram.svg'
-import Github from '../../assets/Github.svg'
+import './about.css';
+import Facebook from '../../assets/Facebook.svg';
+import Twitter from '../../assets/Twitter.svg';
+import Instagram from '../../assets/Instagram.svg';
+import Github from '../../assets/Github.svg';
 
 function SnsItem({item}){
 	return(
@@ -24,7 +24,7 @@ function About({user}) {
 			<p className="user-description">{user.userInfo}</p>
 			<h3>Categories</h3>
 			<ul className="categories">
-			{user.category.map( (item, index) => <li key={index}><a href="#">{item}</a></li>)}
+				{user.category.map( (item, index) => <li key={index}><a href="#">{item}</a></li>)}
 			</ul>
 			
 			<h3>Follow</h3>
@@ -35,7 +35,7 @@ function About({user}) {
 				<SnsItem item={Github} />
 			</ul>
 		</aside>
-    )
+    );
 }
 
 export default About;

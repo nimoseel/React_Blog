@@ -1,9 +1,9 @@
 import React from 'react';
 import './post.css';
-import "./author.css";
-import "./category.css";
+import './author.css';
+import './category.css';
 
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function Post({thumbnail, title, category, profileImg, contents, userName, created}) {
     return (
@@ -28,7 +28,7 @@ function Post({thumbnail, title, category, profileImg, contents, userName, creat
 				</div>
 			</article>
 		</Link>
-    )
+    );
 }
 
 export default Post;
