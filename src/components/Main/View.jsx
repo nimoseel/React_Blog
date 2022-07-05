@@ -1,6 +1,8 @@
 import React from 'react';
 import './view.css';
 import './wrapbox.css';
+import './category.css';
+import './author.css';
 import {Link} from 'react-router-dom';
 
 function View() {
@@ -12,15 +14,15 @@ function View() {
 
 						<dl className="author-wrap">
 							<dt className="a11y-hidden">Author</dt>
-							<dd className="author"><img src="../images/profile.jpg" alt="" /> Chilli</dd>
+							<dd className="author"><img src="../assets/profile.jpg" alt="" /> Chilli</dd>
 							<dt className="a11y-hidden">Created</dt>
 							<dd className="created">2022.05.25</dd>
 						</dl>
 
 						<dl className="category">
 							<dt className="a11y-hidden">Category</dt>
-							<dd>liddfe</dd>
-							<dd>sadftyle</dd>
+							<dd>life</dd>
+							<dd>style</dd>
 						</dl>
 						<div className="title-wrap">
 							<h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>

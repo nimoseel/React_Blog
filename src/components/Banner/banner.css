@@ -5,13 +5,6 @@
 	margin-bottom: -7em;
 }
 
-.innerBanner {
-	position: relative;
-	background: url(../../../public/images/post-background6.jpg) no-repeat 50% 50% / cover;
-	height: 27em;
-	margin-bottom: -7em;
-}
-
 .banner-contents {
 	width: 28rem;
 	padding: 7rem 0 14.5rem;

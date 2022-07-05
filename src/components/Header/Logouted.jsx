@@ -12,7 +12,7 @@ const Logouted = ({setLogin}) => {
 				<span>Login</span>
 			</a>
 		</li>
-		<li class="only-pc">
+		<li className="only-pc">
 			<a href="#" className="button gray">
 				<img src={Register} alt="" />
 				<span>Register</span>

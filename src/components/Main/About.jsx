@@ -5,38 +5,26 @@ import Twitter from '../../assets/Twitter.svg'
 import Instagram from '../../assets/Instagram.svg'
 import Github from '../../assets/Github.svg'
 
-function CategoriesItem({txt}){
-	return(
-			<li><a href="#">{txt}</a></li>
-	);
-};
-
 function SnsItem({item}){
 	return(
 		<li>
 			<a href="#">
-			<img src={item} alt={item} />
+				<img src={item} alt={item} />
 			</a>
 		</li>
 	);
 };
 
-function About() {
+function About({user}) {
     return (
 		<aside className="about">
 			<h2>About Me</h2>
-			<img src="../images/profile.jpg" alt="" className="user-profile" />
-			<p className="user-name">Chilli</p>
-			<p className="user-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<img src={process.env.PUBLIC_URL+user.profileImg} alt="" className="user-profile" />
+			<p className="user-name">{user.name}</p>
+			<p className="user-description">{user.userInfo}</p>
 			<h3>Categories</h3>
 			<ul className="categories">
-				<CategoriesItem txt="Life" />
-				<CategoriesItem txt="Style" />
-				<CategoriesItem txt="Tech" />
-				<CategoriesItem txt="Sport" />
-				<CategoriesItem txt="Photo" />
-				<CategoriesItem txt="Develop" />
-				<CategoriesItem txt="Music" />
+			{user.category.map( (item, index) => <li key={index}><a href="#">{item}</a></li>)}
 			</ul>
 			
 			<h3>Follow</h3>

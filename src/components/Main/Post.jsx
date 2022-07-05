@@ -3,35 +3,31 @@ import './post.css';
 import "./author.css";
 import "./category.css";
 
-function Post({src}) {
+import { Link } from "react-router-dom";
+
+function Post({thumbnail, title, category, profileImg, contents, userName, created}) {
     return (
-        <a href="post-view.html" className="post">
+		<Link to="/post" className="post">			
 			<article>
-				<img src={src} alt="" />
+				<img src={process.env.PUBLIC_URL+thumbnail} alt="" />
 				<div className="contents-wrap">
 					<dl className="category">
                         <dt className="a11y-hidden">Category</dt>
-                        <dd>Life</dd>
-						<dd>Style</dd>
+                        {category.map( (item, index) => <dd key={index}>{item}</dd>)}
                     </dl>
-					<h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit</h3>
+					<h3>{title}</h3>
 					<dl className="author-wrap">
 						<dt className="a11y-hidden">Author</dt>
-						<dd className="author"><img src="../images/profile.jpg" alt="" /> Chilli</dd>
+						<dd className="author"><img src={process.env.PUBLIC_URL+profileImg}  alt="" />{userName}</dd>
 						<dt className="a11y-hidden">Created</dt>
-						<dd className="created">2022.05.25</dd>
+						<dd className="created">{created}</dd>
 					</dl>
 					<p className="post-description">
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore illum nostrum perferendis voluptas, voluptate soluta corrupti dolore quidem. Placeat, eaque! Exercitationem est
-						facilis dolor quas odio cum incidunt repudiandae vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore illum nostrum perferendis voluptas, voluptate soluta
-						corrupti dolore quidem. Placeat, eaque! Exercitationem est facilis dolor quas odio cum incidunt repudiandae vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
-						illum nostrum perferendis voluptas, voluptate soluta corrupti dolore quidem. Placeat, eaque! Exercitationem est facilis dolor quas odio cum incidunt repudiandae vel. Lorem ipsum
-						dolor sit amet consectetur, adipisicing elit. Inventore illum nostrum perferendis voluptas, voluptate soluta corrupti dolore quidem. Placeat, eaque! Exercitationem est facilis
-						dolor quas odio cum incidunt repudiandae vel."
+						{contents[0].text}
 					</p>
 				</div>
 			</article>
-		</a>
+		</Link>
     )
 }
 

@@ -6,7 +6,7 @@ const PostView = () => {
     return(
     <>
         <InnerBanner />
-        <View />
+        <View/>
     </>
     );
 }

@@ -1,15 +1,16 @@
 import React from 'react'
 import './banner.css'
 
-function Banner() {
+function Banner({data}) {
+
 return (
     <div className="banner">
 		<div className="max-width">
 			<div className="banner-contents">
-				<p className="sub-text">React & Node</p>
-				<p className="main-text">My BLOG</p>
+				<p className="sub-text">{data.blog.subTitle}</p>
+				<p className="main-text">{data.blog.mainTitle}</p>
 				<p className="description">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nostrum dolor provident beatae deserunt magnam, illo neque. Maiores ipsum commodi dolorum beatae aliquid laboriosam est
+					{data.blog.description}
 				</p>
 			</div>
 		</div>

@@ -1,13 +1,12 @@
 import Banner from "../components/Banner/Banner"
 import Main from "../components/Main/Main"
 
-
-const MainPage = () => {
+const MainPage = ({data}) => {
     return(
-    <>
-        <Banner />
-        <Main />
-    </>
+        <>
+            <Banner data={data}/>
+            <Main data={data}/>
+        </>
     );
 }
 
