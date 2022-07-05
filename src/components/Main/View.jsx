@@ -1,7 +1,5 @@
 import React from 'react';
 import './view.css';
-import Author from '../../components/Main/Author';
-import Category from '../../components/Main/Category';
 import './wrapbox.css';
 import {Link} from 'react-router-dom';
 
@@ -11,8 +9,19 @@ function View() {
 			<div className="max-width">
 				<section className="wrap-box">
 					<div className="inner">
-						<Author />
-						<Category category1={'Life'} category2={'Style'}/>
+
+						<dl className="author-wrap">
+							<dt className="a11y-hidden">Author</dt>
+							<dd className="author"><img src="../images/profile.jpg" alt="" /> Chilli</dd>
+							<dt className="a11y-hidden">Created</dt>
+							<dd className="created">2022.05.25</dd>
+						</dl>
+
+						<dl className="category">
+							<dt className="a11y-hidden">Category</dt>
+							<dd>liddfe</dd>
+							<dd>sadftyle</dd>
+						</dl>
 						<div className="title-wrap">
 							<h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
 							<button className="btn-like">Like</button>
