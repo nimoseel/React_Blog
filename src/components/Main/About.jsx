@@ -23,53 +23,31 @@ function SnsItem({item}){
 
 function About() {
     return (
-    <aside className="about">
-					<h2>About Me</h2>
-					<img src="../images/profile.jpg" alt="" className="user-profile" />
-					<p className="user-name">Chilli</p>
-					<p className="user-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-					<h3>Categories</h3>
-					<ul className="categories">
-						<CategoriesItem txt="Life" />
-						<CategoriesItem txt="Style" />
-						<CategoriesItem txt="Tech" />
-						<CategoriesItem txt="Sport" />
-						<CategoriesItem txt="Photo" />
-						<CategoriesItem txt="Develop" />
-						<CategoriesItem txt="Music" />
-					</ul>
-					
-					<h3>Follow</h3>
-					<ul className="sns">
-						<SnsItem item={Facebook} />
-						<SnsItem item={Twitter} />
-						<SnsItem item={Instagram} />
-						<SnsItem item={Github} />
-					</ul>
-				</aside>
+		<aside className="about">
+			<h2>About Me</h2>
+			<img src="../images/profile.jpg" alt="" className="user-profile" />
+			<p className="user-name">Chilli</p>
+			<p className="user-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<h3>Categories</h3>
+			<ul className="categories">
+				<CategoriesItem txt="Life" />
+				<CategoriesItem txt="Style" />
+				<CategoriesItem txt="Tech" />
+				<CategoriesItem txt="Sport" />
+				<CategoriesItem txt="Photo" />
+				<CategoriesItem txt="Develop" />
+				<CategoriesItem txt="Music" />
+			</ul>
+			
+			<h3>Follow</h3>
+			<ul className="sns">
+				<SnsItem item={Facebook} />
+				<SnsItem item={Twitter} />
+				<SnsItem item={Instagram} />
+				<SnsItem item={Github} />
+			</ul>
+		</aside>
     )
 }
-
-
-// <li>
-// 							<a href="#">
-// 								<img src={src} alt={alt} />
-// 							</a>
-// 						</li>
-// 						<li>
-// 							<a href="#">
-// 								<img src={sns} alt="Twitter" />
-// 							</a>
-// 						</li>
-// 						<li>
-// 							<a href="#">
-// 								<img src={sns} alt="Instagram" />
-// 							</a>
-// 						</li>
-// 						<li>
-// 							<a href="#">
-// 								<img src={sns} alt="GitHub" />
-// 							</a>
-// 						</li>
 
 export default About;
